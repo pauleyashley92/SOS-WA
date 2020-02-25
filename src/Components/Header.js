@@ -5,6 +5,7 @@ class Header extends React.Component{
         return (
             <div>
                 <h1>Long Marine Strandings</h1>
+                <h2>01/01/2010 - 02/26/2020</h2>
             </div>
         );
     }
