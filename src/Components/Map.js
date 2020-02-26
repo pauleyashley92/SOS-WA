@@ -12,6 +12,7 @@ function Map() {
     zoom: 13
   });
 
+
   const [selectedStranding, setSelectedStranding] = useState(null);
 
   return (
@@ -50,16 +51,13 @@ function Map() {
             onClose={() => {
               setSelectedStranding(null);
             }}
+
           >
             <div>
               <h2> {selectedStranding.properties.SPECIES} </h2>
-              <ul>
-                <li> {selectedStranding.properties.DESCRIPTION} </li>
-                <li> {selectedStranding.properties.AGE} </li> 
-                <li> {selectedStranding.properties.SEX} </li>
-
-              </ul>
-    
+                <p> {selectedStranding.properties.DESCRIPTION} </p>
+                <p> {selectedStranding.properties.AGE} </p> 
+                <p> {selectedStranding.properties.SEX} </p>
             </div>
           </Popup>
         ) : null}
