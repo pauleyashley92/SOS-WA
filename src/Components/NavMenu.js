@@ -10,7 +10,7 @@ function NavMenu() {
   return (
     <div>
       <Navbar className="header" expand="lg">
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="/">
           <img
             src="../long-marine-stranding-program.png"
             alt="stranding logo"
@@ -21,15 +21,15 @@ function NavMenu() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto" >
-            <Nav.Link href="#home" >Map</Nav.Link>
-            <Nav.Link href="#home" >FAQ</Nav.Link>
+            <Nav.Link href="/" >Map</Nav.Link>
+            <Nav.Link href="faq" >FAQ</Nav.Link>
             <Nav.Link href="https://lmlstrandingnetwork.ucsc.edu/" >
               Stranding Program
             </Nav.Link>
-            <Nav.Link href="#home" >About The Developers</Nav.Link>
+            <Nav.Link href="about" >About The Developers</Nav.Link>
           </Nav>
         </Navbar.Collapse>
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="/">
             <Nav className="justify-content-end">
             <img
             src="../baskin-logo-banner-new.jpg"
